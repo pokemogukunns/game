@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>猫とドラゴン-大人の協力バトル</title>
+ 
+  <meta name="keywords" content="猫ドラ,ねこどら,ねこドラ,ネコドラ,ネコどら,猫とドラゴン,ねことドラゴン,協力バトル,ゲーム,ブラウザ,コラボ"/>
+  <meta name="description" content="【4/3 NEWリリース】猫とドラゴンは、一人でも楽しい！みんなで遊ぶとめっちゃ楽しい！インストール不要で遊べる『大人の協力バトル』です ♪♪リリース記念♪♪ 気に入った最高レアが出るまで無料でガチャ引き放題実施中☆" />
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow,archive">
+ 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@nekodragons" />
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="猫とドラゴン">
+  <meta property="og:title" content="猫とドラゴン-大人の協力バトル" />
+  <meta property="og:description" content="猫とドラゴンは、一人でも楽しい！みんなで遊ぶとめっちゃ楽しい！インストール不要で遊べる『大人の協力バトル』です ♪♪リリース記念♪♪ 気に入った最高レアが出るまで無料でガチャ引き放題実施中☆" />
+  <meta property="og:image" content="https://asset.nekodora.jp/img/ogp/20240403_nekodora.png" />
+  <meta property="og:url" content="https://game.nekodora.jp" />
+ 
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NZ52KXC');</script>
+  <!-- End Google Tag Manager -->
+ 
+  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+ 
+  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="猫ドラ">
+  <meta name="format-detection" content="telephone=no">
+ 
+  <!-- force webkit on 360 -->
+  <meta name="renderer" content="webkit"/>
+  <meta name="force-rendering" content="webkit"/>
+  <!-- force edge on IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="msapplication-tap-highlight" content="no">
+ 
+  <!-- force full screen on some browser -->
+  <meta name="full-screen" content="yes"/>
+  <meta name="x5-fullscreen" content="true"/>
+  <meta name="360-fullscreen" content="true"/>
+ 
+  <!-- force screen orientation on some browser -->
+  <meta name="screen-orientation" content="portrait"/>
+  <meta name="x5-orientation" content="portrait">
+ 
+  <!--fix fireball/issues/3568 -->
+  <!--<meta name="browsermode" content="application">-->
+  <meta name="x5-page-mode" content="app">
+ 
+  <link rel="apple-touch-icon" href="https://nekodora.jp/icons/192.png" />
+ 
+  <link rel="stylesheet" type="text/css" href="https://nekodora.jp/style-mobile.1900c.css"/>
+ 
+  <link rel="stylesheet" type="text/css" href="https://nekodora.jp/style-zero.5b543.css"/>
+ 
+  <script src="https://nekodora.jp/js/zero-styling.js" charset="utf-8"></script>
+ 
+  <script>
+    (function() {
+      if(/iP(hone|od|ad)/.test(navigator.userAgent) && location.host.indexOf('ios.') != 0) {
+        ('serviceWorker' in navigator) && navigator.serviceWorker.getRegistrations().then(function(rs) { for(var r of rs) { r.unregister(); } });
+        document.write('<script async src="https://nekodora.jp/js/bookmark_bubble.min.js"><\/script>');
+        return;
+      };
+ 
+      var link = document.createElement('link');
+      link.setAttribute('rel', 'manifest');
+      link.href = 'manifest.c061b.json';
+      document.getElementsByTagName('head')[0].appendChild(link);
+ 
+      ('serviceWorker' in navigator) && navigator.serviceWorker.register('sw.js');
+    }());
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.7/pwacompat.min.js"
+          integrity="sha384-ptgwb3/v69WGur7IwSnWOowVxE7hcRB3DG/EiHdejrw2sFNwUHynFbiRMPxc4hdS"
+          crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZ52KXC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+ 
+<div id="wrapper">
+ 
+  <div id="title-recaptcha-container"></div>
+ 
+  <div id="title_overlay"></div>
+ 
+  <iframe class="maintenance" frameborder="0"></iframe>
+ 
+  <div id="wrapper-Title">
+    <div id="startPlay" class="startPlay" onclick="this.dataset.clicked=1;"></div>
+ 
+    <div class="label tap_start">
+      <img src="https://nekodora.jp/img/label_tap_start.png" class="" />
+    </div>
+ 
+    <div id="contents">
+      <div class="buttons">
+        <div class="button addHomeIcon" style="display: none;">
+          <img src="https://nekodora.jp/img/btn_addHome.png" class="" />
+        </div>
+ 
+        <div id="btn_logout" class="button logout" style="display: none;">
+          <img src="https://nekodora.jp/img/btn_logout.png" class="" />
+        </div>
+ 
+        <div id="loginPlay" class="button login" style="display: none;">
+          <img src="https://nekodora.jp/img/btn_login.png" class="" />
+        </div>
+ 
+        <div class="button config" style="display: none;">
+          <img src="https://nekodora.jp/img/btn_config.png" class="" />
+        </div>
+        
+        <div class="button inquery" style="display: none;">
+          <img src="https://nekodora.jp/img/btn_inquery.png" class="" />
+        </div>
+ 
+        <div class="button gree_coincp" style="display: none;">
+          <img src="https://nekodora.jp/img/bnr_coincp.png" class="" />
+        </div>
+ 
+        <div class="button transfer" style="display: none;">
+          <img src="https://nekodora.jp/img/btn_transfer.png" class="" />
+        </div>
+        
+        <div class="button inquery_app" style="display: none;">
+          <img src="https://nekodora.jp/img/btn_inquery_app.png" class="" />
+        </div>
+ 
+        <div id="btn_deleteAccountApp" class="button delete_account_app" style="display: none;">
+          <img src="https://nekodora.jp/img/btn_delete_account_app.png" class="" />
+        </div>
+      </div>
+ 
+      <div class="footer">
+        <!--//FIXME: and/iosの場合にこの要素を非表示(display: none;)にしてください -->
+        <div class="text platform">
+        </div>
+        <!--//FIXME: and/iosの場合にこの要素を表示(display: inline-table;)にしてください -->
+        <!--//FIXME: バージョンの値の変数化をお願いします -->
+        <div class="text version" style="display: none;">Ver.X.X.XX
+        </div>
+ 
+        <div class="text copyright">
+          <img src="https://nekodora.jp/img/copyright.png" class="" />
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- 警告ダイアログ -->
+  <div id="alert_dialog" class="dialog_bg">
+    <div class="dialog">
+      <div class="dialog_view">
+        <div class="dialog_header"><img src="https://nekodora.jp/img/icon_dialog_title.png" width="6%"/></div>
+        <div class="dialog_text"></div>
+        <div class="dialog_dynamic_content"></div>
+        <div class="dialog_close_button"><img src="https://nekodora.jp/img/btn_close_sub.png" /></div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ホームに追加ダイアログ -->
+  <div id="add_home_dialog" class="dialog_bg">
+    <div class="dialog">
+      <div class="dialog_view">
+        <div class="dialog_header"><img src="https://nekodora.jp/img/icon_dialog_title.png" width="6%"/></div>
+        <div class="dialog_text">ホーム画面に追加すると、起動が簡単になり便利です。</div>
+        <div class="dialog_dynamic_content"></div>
+        <div class="dialog_close_button"><img src="https://nekodora.jp/img/btn_close_sub.png" /></div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- 確認ダイアログ -->
+  <div id="confirm_dialog" class="dialog_bg">
+    <div class="dialog">
+      <div class="dialog_view">
+        <div class="dialog_header"><img src="https://nekodora.jp/img/icon_dialog_title.png" width="6%"/></div>
+        <div class="dialog_content">
+          <div class="dialog_dynamic_content"></div>
+          <div class="dialog_text">ログアウトしたまま連携したアカウントや<br>パスワードを忘れると、</div>
+          <div class="sub_text">ゲームデータを復旧できなくなってしまいます。</div>
+          <div class="dialog_text">本当にログアウトしますか?</div>
+          <div class="dialog_buttons">
+            <div class="close_button"><img src="https://nekodora.jp/img/btn_cancel.png"></div>
+            <div class="ok_button"><img src="https://nekodora.jp/img/btn_logout_244.png"></div>
+          </div>
+        </div>
+        <div class="dialog_close_button"><img src="https://nekodora.jp/img/btn_close_sub.png" /></div>
+      </div>
+    </div>
+  </div>
+ 
+  <div id="tou_dialog" class="dialog_bg">
+    <div class="dialog">
+      <div class="dialog_view">
+        <div class="dialog_header"></div>
+        <div class="dialog_content">
+          <div class="dialog_dynamic_content"></div>
+          <div class="dialog_text">利用規約に同意の上ゲームをお楽しみください。</div>
+            <div class="sub_text"><a onclick="if(window.nativeApp) { nativeApp.open('https://app.nekodora.jp/web/agreements/index'); return false; }" href="https://app.nekodora.jp/web/agreements/index" target="_blank">利用規約を確認</a></div>
+          <div class="dialog_buttons">
+            <div class="close_button"></div>
+            <div class="ok_button"><img src="https://nekodora.jp/img/btn_accept.png"></div>
+          </div>
+        </div>
+        <div class="dialog_close_button"><img src="https://nekodora.jp/img/btn_close_sub.png" /></div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- アプリ内ブラウザダイアログ -->
+  <div id="alert_embedded_dialog" class="dialog_bg">
+    <div class="dialog">
+      <img class="dialog_content" />
+    </div>
+  </div>
+ 
+  <!-- ownログインダイアログ -->
+  <div id="own_login_dialog" class="dialog_bg">
+    <div class="dialog">
+      <div class="dialog_view">
+        <div class="dialog_header"><span>ログイン</span></div>
+        <div class="dialog_content">
+          <!-- LINE簡単認証 -->
+          <div class="login_select" style="display: none;">
+            <div class="dialog_text">ログインすると以前のゲームデータから再開できます。</div>
+            <div class="dialog_dynamic_content"></div>
+            <div class="login_line_button"><img src="https://nekodora.jp/img/btn_simple_auth_line.png" /></div>
+            <div class="sub_text">◆これによりLINEへの自動投稿が許可されることはありません。</div>
+            <div class="login_mail_button"><img src="https://nekodora.jp/img/btn_mail_login.png" /></div>
+            <div class="login_tel_button"><img src="https://nekodora.jp/img/btn_tel_login.png" /></div>
+          </div>
+          <!-- 簡単認証後データがなかった時 -->
+          <div class="login_not_found" style="display: none;">
+            <div class="dialog_text">ログインした<span class="not_found_provider"></span>で保存されている<br>ゲームデータがありませんでした。<br>このままゲームをスタートしますか?</div>
+            <div class="login_game_start"><img src="https://nekodora.jp/img/btn_game_start.png" /></div>
+          </div>
+        </div>
+        <div class="dialog_close_button"><img src="https://nekodora.jp/img/btn_close_sub.png" /></div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- メールアドレスでログインダイアログ -->
+  <div id="own_mail_login_dialog" class="dialog_bg">
+    <div class="dialog">
+      <div class="dialog_view">
+        <div class="dialog_header"><span>ログイン</span></div>
+        <div class="dialog_content">
+          <div class="dialog_text">メールアドレスを使用してログインします。</div>
+          <div class="dialog_form">
+            <form accept-charset="UTF-8" action="#" id="mailForm" method="post">
+              <div class="loginMail">
+                <label for="loginMail">メールアドレス</label>
+                <input id="loginMail" name="loginMail" placeholder="メールアドレスを入力してください" required="required" type="email" value="">
+              </div>
+              <div class="loginPassword">
+                <label for="loginPassword">パスワード</label>
+                <input id="loginPassword" name="loginPassword" placeholder="半角英数6文字以上" required="required" type="password" value="">
+              </div>
+            </form>
+            <div class="passwordLink">
+              <span>パスワードを忘れた方</span><img src="https://nekodora.jp/img/icon_information.png">
+            </div>
+          </div>
+          <div class="dialog_buttons">
+            <div class="close_button"><img src="https://nekodora.jp/img/btn_cancel.png"></div>
+            <div class="ok_button"><img src="https://nekodora.jp/img/btn_login_244.png"></div>
+          </div>
+          <div class="dialog_dynamic_content"></div>
+          <div class="dialog_close_button"><img src="https://nekodora.jp/img/btn_close_sub.png" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- 電話番号でログインダイアログ -->
+  <div id="own_tel_login_dialog" class="dialog_bg">
+    <div class="dialog">
+      <div class="dialog_view">
+        <div class="dialog_header"><span>ログイン</span></div>
+        <div class="dialog_content">
+          <div class="dialog_text">SMSで確認コードを送ります。</div>
+          <div class="dialog_form">
+            <form accept-charset="UTF-8" action="#" id="telForm" method="post">
+              <div class="loginTel">
+                <label for="loginTel">電話番号(ハイフンなし)</label>
+                <input id="loginTel" name="logintel" placeholder="電話番号を入力してください" required="required" type="tel" maxlength="11" value="">
+                <input type="text" class="dummy">
+              </div>
+            </form>
+          </div>
+          <div class="sub_text">This site is protected by reCAPTCHA and the <br/>
+            Google <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.</div>
+          <div class="dialog_buttons">
+            <div class="close_button"><img src="https://nekodora.jp/img/btn_cancel.png"></div>
+            <div class="ok_button"><img src="https://nekodora.jp/img/btn_send_244.png"></div>
+          </div>
+          <div class="dialog_dynamic_content"></div>
+          <div class="dialog_close_button"><img src="https://nekodora.jp/img/btn_close_sub.png" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- SMSコード入力ダイアログ -->
+  <div id="own_SMS_code_dialog" class="dialog_bg">
+    <div class="dialog">
+      <div class="dialog_view">
+        <div class="dialog_header"><span>ログイン</span></div>
+        <div class="dialog_content">
+          <div class="dialog_text">SMSで送信された確認コードを入力してください。</div>
+          <div class="dialog_form">
+            <form accept-charset="UTF-8" action="#" id="codeForm" method="post">
+              <div class="confirmCode">
+                <label for="confirmCode">確認コード</label>
+                <input id="confirmCode" name="confirmCode" placeholder="確認コードを入力してください" required="required" type="number" value="">
+                <input type="text" class="dummy">
+              </div>
+            </form>
+          </div>
+          <div class="dialog_buttons">
+            <div class="close_button"><img src="https://nekodora.jp/img/btn_cancel.png"></div>
+            <div class="ok_button"><img src="https://nekodora.jp/img/btn_decision.png"></div>
+          </div>
+          <div class="dialog_dynamic_content"></div>
+          <div class="dialog_close_button"><img src="https://nekodora.jp/img/btn_close_sub.png" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- パスワード再設定入力ダイアログ -->
+  <div id="own_reset_password_dialog" class="dialog_bg">
+    <div class="dialog">
+      <div class="dialog_view">
+        <div class="dialog_header"><span>ログイン</span></div>
+        <div class="dialog_content">
+          <div class="dialog_text">パスワード再設定用のメールを送ります。</div>
+          <div class="dialog_form">
+            <form accept-charset="UTF-8" action="#" id="passWordForm" method="post">
+              <div class="resetPassWord">
+                <label for="resetPassWord">メールアドレス</label>
+                <input id="resetPassWord" name="resetPassWord" placeholder="メールアドレスを入力してください" required="required" type="email" value="">
+                <input type="text" class="dummy">
+              </div>
+            </form>
+          </div>
+          <div class="dialog_buttons">
+            <div class="close_button"><img src="https://nekodora.jp/img/btn_cancel.png"></div>
+            <div class="ok_button"><img src="https://nekodora.jp/img/btn_send_244.png"></div>
+          </div>
+          <div class="dialog_dynamic_content"></div>
+          <div class="dialog_close_button"><img src="https://nekodora.jp/img/btn_close_sub.png" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- own切り替えダイアログ -->
+  <div id="own_switch_dialog" class="dialog_bg">
+    <div class="dialog">
+      <div class="dialog_view">
+        <div class="dialog_header">アカウント連携</div>
+        <div class="dialog_content">
+          <div class="dialog_text">以前にプレイしていたデータがあります。<br>どちらのデータを使用しますか?</div>
+          <div class="dialog_dynamic_content"></div>
+          <div class="sub_text">◆選択しなかったデータに復帰することはできません。</div>
+          <div class="account_select">
+            <div class="current_user">
+              <div class="user_status">
+                <div><span class="user_name"></span></div>
+                <div>Lv. <span class="user_lv"></span></div>
+                <div>総戦力：<span class="user_atk_dfn_sum"></span></div>
+              </div>
+              <div class="decision_button"><img src="https://nekodora.jp/img/btn_decision.png" /></div>
+            </div>
+ 
+            <div class="exist_user">
+              <div class="user_status">
+                <div><span class="user_name"></span></div>
+                <div>Lv. <span class="user_lv"></span></div>
+                <div>総戦力：<span class="user_atk_dfn_sum"></span></div>
+              </div>
+              <div class="decision_button"><img src="https://nekodora.jp/img/btn_decision.png" /></div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="dialog_close_button"><img src="https://nekodora.jp/img/btn_close_sub.png" /></div>
+      </div>
+    </div>
+  </div>
+ 
+  <!--own->mobage dialog-->
+  <div id="confirm_played_dialog" class="dialog_bg">
+    <div class="dialog">
+      <div class="dialog_view">
+        <div class="dialog_header"><img src="https://nekodora.jp/img/icon_dialog_title.png" width="6%"/></div>
+        <div class="dialog_content">
+          <div class="dialog_dynamic_content"></div>
+          <div class="dialog_text">
+            以前にオリジナル版でプレイしています。<br/>
+            アカウント連携せずにmobage版をスタートすると、
+          </div>
+          <div class="sub_text">
+            データが復旧できなくなってしまいます。
+          </div>
+          <div class="dialog_text">
+            ログアウトしてmobage版をスタートしますか?
+          </div>
+          <div class="dialog_buttons">
+            <div class="close_button"><img src="https://nekodora.jp/img/btn_cancel.png"></div>
+            <div class="ok_button"><img src="https://nekodora.jp/img/btn_logout_244.png"></div>
+          </div>
+        </div>
+        <div class="dialog_close_button"><img src="https://nekodora.jp/img/btn_close_sub.png" /></div>
+      </div>
+    </div>
+  </div>
+ 
+  <!--pre confirm app delete account dialog-->
+  <div id="pre_confirm_delete_account_dialog" class="dialog_bg">
+    <div class="dialog">
+      <div class="dialog_view">
+        <div class="dialog_header"><img src="https://nekodora.jp/img/icon_dialog_title.png" width="6%"/></div>
+        <div class="dialog_content">
+          <div class="dialog_dynamic_content"></div>
+          <div class="dialog_scrollable_content">
+            アカウント削除に際して、<br/>下記の事項をご確認・ご了承ください<br/>
+            <br/>
+            ・アプリは初期インストール時の状態に戻り、アカウントの復旧は行えなくなります<br/>
+            ・ランキング情報などサービス内に一部のユーザー情報表示が残る場合がございます<br/>
+            ・アカウント削除を理由とする返金要請には一切応じられません<br/>
+            ・サービス終了の際に資金決済に関する法律に基づく返金要請を行うためには、以下の情報が必要になります。これらの情報はアカウント削除により確認できなくなりますので、事前にお手元に記録保管いただくことをお薦めします<br/>
+            ＜必要な情報＞<br/>
+            プレイヤーID、プレイヤー名、課金情報、ゲームプレイ開始された年/月<br/>
+            ・アカウント削除によって発生したトラブルに関して弊社は一切の責任を負いません<br/>
+          </div>
+          <div class="dialog_text">注意事項を全て確認しました</div>
+          <div class="dialog_buttons">
+            <div class="close_button"><img src="https://nekodora.jp/img/btn_cancel.png"></div>
+            <div class="ok_button"><img src="https://nekodora.jp/img/btn_decision.png"></div>
+          </div>
+        </div>
+        <div class="dialog_close_button"><img src="https://nekodora.jp/img/btn_close_sub.png" /></div>
+      </div>
+    </div>
+  </div>
+ 
+  <!--confirm app delete account dialog-->
+  <div id="confirm_delete_account_dialog" class="dialog_bg">
+    <div class="dialog">
+      <div class="dialog_view">
+        <div class="dialog_header"><img src="https://nekodora.jp/img/icon_dialog_title.png" width="6%"/></div>
+        <div class="dialog_content">
+          <div class="dialog_dynamic_content"></div>
+          <div class="dialog_text">
+            アカウントを削除します。<br>
+            本当によろしいですか?
+          </div>
+          <div class="dialog_buttons">
+            <div class="close_button"><img src="https://nekodora.jp/img/btn_cancel.png"></div>
+            <div class="ok_button"><img src="https://nekodora.jp/img/btn_decision.png"></div>
+          </div>
+        </div>
+        <div class="dialog_close_button"><img src="https://nekodora.jp/img/btn_close_sub.png" /></div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- アニメーション -->
+  <div id="wrapper-Opening">
+    <div id="white_overlay"></div>
+    <div id="black_overlay"></div>
+    <div id="skip_button"><img /></div>
+  </div>
+ 
+</div>
+ 
+<!-- 次ページ -->
+<canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+<div id="splash">
+  <div class="progress-bar stripes">
+    <span style="width: 0%"></span>
+  </div>
+</div>
+<!-- ギルバト中にのみ表示するコンテンツ。現状スクロールを戻すボタンのみ -->
+<div id="guildBattleContents" style="display: none;">
+  <div id="btnScrollTop" class="scroll_top_button">
+  <img src="https://nekodora.jp/img/btn_back_to_top.png"></div>
+</div>
+<div id="recaptcha-container"></div>
+ 
+<script>window.Promise || document.write('<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CCustomEvent%2CPromise%2CElement"><\/script>');</script>
+ 
+<script src="src/settings.3dc11.js" charset="utf-8"></script>
+<script>window._CCEngineSrc = _CCSettings.debug ? 'cocos2d-js.js' : 'cocos2d-js-min.a04c1.js';</script>
+ 
+<script src="main.b7c05.js" charset="utf-8"></script>
+ 
+<script src="https://nekodora.jp/js/lib/fastclick.min.js"></script>
+ 
+<script src="https://nekodora.jp/js/lib/require.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    FastClick.attach(document.getElementById('wrapper'));
+  }, false);
+  require.config({
+    baseUrl: 'js',
+    waitSeconds: 10
+  });
+  require(['zero-amd'], function(){
+    require(['ZUtil'], function(ZUtil) {
+      window.ZUtil = ZUtil;
+      // purge for cocos
+      requirejs = require = define = undefined;
+    });
+  });
+</script>
+ 
+<script type="text/javascript">
+  (function () {
+    // open web debugger console
+    if (typeof VConsole !== 'undefined') {
+      window.vConsole = new VConsole();
+    }
+  })();
+</script>
+</body>
+</html>
